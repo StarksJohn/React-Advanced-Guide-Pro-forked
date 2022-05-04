@@ -1,46 +1,68 @@
-.page{
-    position: fixed;
-    left:0;
-    right: 0;
-    top:0;
-    bottom: 0;
-    background-color: #ffff;
-    
-}
-.content{
-    position: absolute;
-    left:50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-.title{
-    text-align: center;
-    font-size: 10px;
-    color: #ccc;
-}
-.btns{
-    padding-left: 30px;
-    button{
-        margin-right: 30px;
-    }
-}
-.routerLink{
-    margin-left: 15px;
-    cursor: pointer;
-    // color: #0366d6;
-    font-size: 14px;
-}
-.theStyle{
-    height: 50px;
-    background-color: #fff;
-    position: fixed;
-    left:0;
-    right:0;
-    top:0;
-    z-index: 1000;
+.page {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #ffff;
+
 }
 
-.show{
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  text-align: center;
+  font-size: 10px;
+  color: #ccc;
+}
+
+.btns {
+  padding-left: 30px;
+
+  button {
+    margin-right: 30px;
+  }
+}
+
+.routerLink {
+  margin-left: 15px;
+  cursor: pointer;
+  // color: #0366d6;
+  font-size: 14px;
+}
+
+.theStyle {
+  //height: 50px;
+  background-color: yellow;
+  //position: fixed;
+  //left:0;
+  //right:0;
+  //top:0;
+  //z-index: 1000;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw; //CSS3引入的"vw"和"vh"基于宽度/高度相对于窗口大小,但是 width 不能=vw,否则太宽
+  min-height: 100vh; //https://www.cnblogs.com/cxdg/p/8550353.html 设置元素高度为页面整个屏幕高
+  position: relative;
+}
+.menu{
+  width: 100%;
+  background-color:blue;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.show {
 
   padding: 30px;
   width: 500px;
@@ -49,122 +71,130 @@
   margin-bottom: 30px;
 }
 
-$bg-linear-gradien-red-light : linear-gradient(135deg, #fc4838 0%, #f6346b  100%);
-$bg-linear-gradien-red-dark : linear-gradient(135deg, #fc4838 0%, #f6346b  100%);
+$bg-linear-gradien-red-light: linear-gradient(135deg, #fc4838 0%, #f6346b 100%);
+$bg-linear-gradien-red-dark: linear-gradient(135deg, #fc4838 0%, #f6346b 100%);
 
-.constrol{
-   padding: 30px;
-   width: 500px;
-   border: 1px solid #ccc;
-   height: 200px;
+.constrol {
+  padding: 30px;
+  width: 500px;
+  border: 1px solid #ccc;
+  height: 200px;
 }
 
-.searchbtn{
-   background: linear-gradient(135deg, #fc4838 0%, #f6346b  100%);
-   color: #fff;
-   min-width: 96px;
-   height :36px;
-   border :none;
-   border-radius: 18px;
-   font-size: 14px;
-   font-weight: 500;
-   cursor: pointer;
-   margin-left: 20px !important;
- }
- .searchbtn:focus{
-   background: $bg-linear-gradien-red-dark;
-   color: #fff;
-   min-width: 96px;
-   height: 36px;
-   border: none;
-   border-radius: 18px;
-   font-size: 14px;
-   font-weight: 500;
-   cursor: pointer;
-   margin-left: 20px !important;
-   box-shadow: 0 2px 7px 0 #FAA79B;
- }
- .searchbtn:hover{
-   background :$bg-linear-gradien-red-light;
-   color :#fff;
-   min-width: 96px;
-   height :36px;
-   margin-left: 20px !important;
-   border: none;
-   border-radius: 18px;
-   font-size :14px;
-   font-weight: 500;
-   cursor: pointer;
-   box-shadow: 0 2px 7px 0 #FAA79B;
- }
- .searchbtn:disabled{
-   background: #c0c6c6;
-   color :#fff;
-   min-width: 96px;
-   height :36px;
-   font-size :14px;
-   font-weight: 500;
-   border: none;
-   border-radius: 18px;
-   cursor: not-allowed;
- }
- 
- .concellbtn{
-   background :#fff;
-   color :#303133;
-   width: 96px;
-   height: 36px;
-   font-size: 14px;
-   font-weight: 500;
-   border :1px solid #E4E7ED;
-   border-radius: 18px;
-   cursor: pointer;
-   // margin-right: 10px;
-   margin-left: 10px;
- }
- .concellbtn:hover{
-   background :rgba(220, 223, 230, 0.1);
-   color: #303133;
-   width :96px;
-   height: 36px;
-   font-size: 14px;
-   font-weight: 500;
-   border :1px solid #E4E7ED;
-   border-radius: 18px;
-   cursor: pointer;
-   // margin-right: 10px;
-   margin-left: 10px;
- }
- .concellbtn:focus{
-   background :rgba(220, 223, 230, 0.24);
-   color: #303133;
-   width :96px;
-   height: 36px;
-   font-size: 14px;
-   font-weight: 500;
-   border: 1px solid #C0C4CC;
-   border-radius: 18px;
-   cursor: pointer;
-   margin-right: 10px;
-   margin-left: 10px;
- }
+.searchbtn {
+  background: linear-gradient(135deg, #fc4838 0%, #f6346b 100%);
+  color: #fff;
+  min-width: 96px;
+  height: 36px;
+  border: none;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 20px !important;
+}
 
- .label{
-    width: 120px;
-    display: inline-block;
- }
- .input{
-     height: 30px;
-     width: 150px;
- }
- .form{
-    padding: 10px;
- }
- .btns{
-    margin-top: 15px;
- }
+.searchbtn:focus {
+  background: $bg-linear-gradien-red-dark;
+  color: #fff;
+  min-width: 96px;
+  height: 36px;
+  border: none;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 20px !important;
+  box-shadow: 0 2px 7px 0 #FAA79B;
+}
 
-.demo{
+.searchbtn:hover {
+  background: $bg-linear-gradien-red-light;
+  color: #fff;
+  min-width: 96px;
+  height: 36px;
+  margin-left: 20px !important;
+  border: none;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 7px 0 #FAA79B;
+}
+
+.searchbtn:disabled {
+  background: #c0c6c6;
+  color: #fff;
+  min-width: 96px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 18px;
+  cursor: not-allowed;
+}
+
+.concellbtn {
+  background: #fff;
+  color: #303133;
+  width: 96px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #E4E7ED;
+  border-radius: 18px;
+  cursor: pointer;
+  // margin-right: 10px;
+  margin-left: 10px;
+}
+
+.concellbtn:hover {
+  background: rgba(220, 223, 230, 0.1);
+  color: #303133;
+  width: 96px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #E4E7ED;
+  border-radius: 18px;
+  cursor: pointer;
+  // margin-right: 10px;
+  margin-left: 10px;
+}
+
+.concellbtn:focus {
+  background: rgba(220, 223, 230, 0.24);
+  color: #303133;
+  width: 96px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #C0C4CC;
+  border-radius: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.label {
+  width: 120px;
+  display: inline-block;
+}
+
+.input {
+  height: 30px;
+  width: 150px;
+}
+
+.form {
+  padding: 10px;
+}
+
+.btns {
+  margin-top: 15px;
+}
+
+.demo {
   width: 600px;
   height: 400px;
   /* background-color:red; */
@@ -174,9 +204,10 @@ $bg-linear-gradien-red-dark : linear-gradient(135deg, #fc4838 0%, #f6346b  100%)
   font-size: 25px;
   font-family: PingFangSC-Regular;
   font-weight: bold;
-  margin-bottom: 200px ;
+  margin-bottom: 200px;
   background-color: #6a8bad;
 }
-.pt50{
+
+.pt50 {
   padding-top: 50px;
 }

@@ -1,6 +1,8 @@
 # React-Advanced-Guide-Pro
 《React进阶实践指南》——demo项目和代码片段
 
+homePage: https://github.com/StarksJohn/React-Advanced-Guide-Pro-forked
+
 
 ## 上手简介
 
